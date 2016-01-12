@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="Easy">Easy</string>
+  <string name="Medium">Medium</string>
+  <string name="Hard">Hard</string>
+  <string name="ApplicationName">AndroidSweeper</string>
+  <string name="Timer">Timer</string>
+  <string name="MinesRemaining">Mines Remaining</string>
+  <string name="Play">Play</string>
+  <string name="About">About this app</string>
+</resources>

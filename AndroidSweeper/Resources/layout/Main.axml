@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Mine Sweeper"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMain"
+        android:gravity="center_horizontal"
+        android:textSize="50sp" />
+    <TextView
+        android:text="Mines:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMain"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textViewMines"
+        android:gravity="center_horizontal"
+        android:textSize="40sp" />
+    <EditText
+        android:text="5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMines"
+        android:layout_below="@id/textViewMain"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:inputType="number" />
+    <TextView
+        android:text="Height:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMines"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textViewHeight"
+        android:gravity="center_horizontal"
+        android:textSize="40sp" />
+    <EditText
+        android:text="4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHeight"
+        android:layout_below="@id/editTextMines"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:inputType="number" />
+    <TextView
+        android:text="Width:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHeight"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textViewWidth"
+        android:gravity="center_horizontal"
+        android:textSize="40sp" />
+    <EditText
+        android:text="4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextWidth"
+        android:layout_below="@id/editTextHeight"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/AboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4.7dp"
+        android:text="@string/About" />
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@id/AboutButton"
+        android:layout_marginTop="4.7dp"
+        android:text="@string/Play" />
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/PlayButton"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/EasyRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2.0dp"
+            android:checked="true"
+            android:text="@string/Easy" />
+        <RadioButton
+            android:id="@+id/MediumRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2.0dp"
+            android:text="@string/Medium" />
+        <RadioButton
+            android:id="@+id/HardRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2.0dp"
+            android:text="@string/Hard" />
+    </RadioGroup>
+</RelativeLayout>
