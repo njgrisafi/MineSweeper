@@ -60,6 +60,11 @@ namespace MineSweeper
             }
             else
             {
+                if (cell.IsFlagged)
+                {
+                    _numFlags--;
+                    cell.IsFlagged = false;
+                }
                 cell.IsExposed = true;
                 if (cell.IsBomb)
                 {
