@@ -230,7 +230,6 @@ namespace AndroidSweeper
                     {
                         Row = row,
                         Col = col,
-                        IsExposed = false,
                         IsFlipped = false,
                         IsFlagged = false
                     };
