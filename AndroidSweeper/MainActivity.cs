@@ -20,11 +20,18 @@ namespace AndroidSweeper
 
             // Get our button from the layout resource,
             // and attach an event to it
-            var playbutton = FindViewById<Button>(Resource.Id.PlayButton);
-            playbutton.Click += (sender, e) => {
+            var playButton = FindViewById<Button>(Resource.Id.PlayButton);
+            playButton.Click += (sender, e) => {
                 var game = new Intent(this, typeof(Game));
                 StartActivity(game);
             };
+
+            var aboutButton = FindViewById<Button>(Resource.Id.AboutButton);
+            aboutButton.Click += (sender, e) => {
+                var about = new Intent(this, typeof(About));
+                StartActivity(about);
+            };
+
         }
     }
 }

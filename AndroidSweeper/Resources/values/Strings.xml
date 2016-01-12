@@ -9,4 +9,5 @@
   <string name="MinesRemaining">Mines Remaining</string>
   <string name="Play">Play</string>
   <string name="About">About this app</string>
+  <string name="Developer">Nick Grisafi (njg7832@rit.edu)</string>
 </resources>
