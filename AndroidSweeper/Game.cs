@@ -162,26 +162,29 @@ namespace AndroidSweeper
                 {
                     var cell = cells[col, row];
                     var block = _blocks[col, row];
-                    if (cell.IsFlagged && !block.IsFlagged)
+                    if (cell.IsFlagged)
                     {
                         block.SetFlag();
                         continue;
-                    } if (!cell.IsFlagged && block.IsFlagged)
+                    }
+                    if (cell.IsExposed)
+                    {
+                        if (cell.IsBomb && cell.IsFlipped)
+                        {
+                            block.SetBomb();
+                        }
+                        else if (cell.IsFlipped)
+                        {
+                            block.SetFlip();
+                        }
+                        else
+                        {
+                            block.SetNumber(cell.Number);
+                        }
+                    }
+                    else
                     {
                         block.SetEmpty();
-                    }
-                    if (!cell.IsExposed) continue;
-                    if (cell.IsBomb && cell.IsFlipped)
-                    {
-                        block.SetBomb();
-                    }
-                    else if (cell.IsFlipped && !block.IsFlipped)
-                    {
-                        block.SetFlip();
-                    }
-                    else if (!block.IsExposed && !block.IsFlipped && !cell.IsFlagged)
-                    {
-                        block.SetNumber(cell.Number);
                     }
                 }
             }

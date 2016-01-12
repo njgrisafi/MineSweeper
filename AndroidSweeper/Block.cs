@@ -15,7 +15,6 @@ namespace AndroidSweeper
 {
     public class Block : ImageButton
     {
-        public bool IsExposed;
         public bool IsFlipped;
         public bool IsFlagged;
         public int Row;
@@ -51,7 +50,6 @@ namespace AndroidSweeper
         public void SetEmpty()
         {
             SetImageResource(Resource.Drawable.tile_empty);
-            IsExposed = true;
             if (!IsFlagged) return;
             IsFlagged = false;
             Game.NumFlags++;
@@ -62,7 +60,6 @@ namespace AndroidSweeper
         public void SetFlip()
         {
             SetImageResource(Resource.Drawable.tile_0);
-            IsExposed = true;
             IsFlipped = true;
             if (!IsFlagged) return;
             IsFlagged = false;
@@ -83,7 +80,6 @@ namespace AndroidSweeper
         public void SetBomb()
         {
             SetImageResource(Resource.Drawable.tile_bomb);
-            IsExposed = true;
             IsFlipped = true;
         }
         /// <summary>
@@ -127,7 +123,6 @@ namespace AndroidSweeper
                     SetEmpty();
                     break;
             }
-            IsExposed = true;
         }
     }
 }
