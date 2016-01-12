@@ -76,9 +76,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MineSweeper\GameEngine.csproj">
+    <ProjectReference Include="..\MineSweeper\SharedGameEngine.csproj">
       <Project>{407e35c6-2277-4cf6-96ea-e5b112b2ae22}</Project>
-      <Name>GameEngine</Name>
+      <Name>SharedGameEngine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

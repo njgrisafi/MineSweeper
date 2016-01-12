@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "MineSweeper\GameEngine.csproj", "{407E35C6-2277-4CF6-96EA-E5B112B2AE22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedGameEngine", "MineSweeper\SharedGameEngine.csproj", "{407E35C6-2277-4CF6-96EA-E5B112B2AE22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "ConsoleApp\Console.csproj", "{1519246C-DF11-485C-A5A8-EBCFE09CFB64}"
 EndProject
