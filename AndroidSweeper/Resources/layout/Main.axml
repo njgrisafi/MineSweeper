@@ -91,7 +91,7 @@
         android:layout_marginTop="4.7dp"
         android:text="@string/Play" />
     <RadioGroup
-        android:id="@+id/radioSex"
+        android:id="@+id/radioDifficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/PlayButton"
