@@ -75,19 +75,16 @@ namespace AndroidSweeper
 			public const int tile_8 = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int tile_9 = 2130837514;
+			public const int tile_bomb = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int tile_bomb = 2130837515;
+			public const int tile_empty = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int tile_empty = 2130837516;
+			public const int tile_flag = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int tile_flag = 2130837517;
-			
-			// aapt resource value: 0x7f02000e
-			public const int xamarin = 2130837518;
+			public const int xamarin = 2130837517;
 			
 			static Drawable()
 			{

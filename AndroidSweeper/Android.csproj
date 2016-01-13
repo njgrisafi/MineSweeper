@@ -104,9 +104,6 @@
     <AndroidResource Include="Resources\drawable\tile_8.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tile_9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\tile_0.png" />
   </ItemGroup>
   <ItemGroup>
