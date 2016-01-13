@@ -65,7 +65,6 @@ namespace MineSweeper
                     _numFlags--;
                     cell.IsFlagged = false;
                 }
-                cell.IsExposed = true;
                 if (cell.IsBomb)
                 {
                     GameState = GameState.Loss;
@@ -80,11 +79,6 @@ namespace MineSweeper
                 {
                     cell.IsFlipped = true;
                     _numFlips += 1;
-                    var adjCells = GetAdjacentCells(move.Row, move.Col);
-                    foreach (var adjCell in adjCells)
-                    {
-                        adjCell.IsExposed = true;
-                    }
                 }
             }
             if (!IsWin()) return;
@@ -212,12 +206,11 @@ namespace MineSweeper
             while (queue.Count > 0)
             {
                 var currCell = queue.Dequeue();
-                currCell.IsExposed = true;
-                if (currCell.Number != 0 || currCell.IsFlipped) continue;
                 currCell.IsFlipped = true;
                 _numFlips += 1;
+                if (currCell.Number != 0) continue;
                 var adjCells = GetAdjacentCells(currCell.Row, currCell.Col);
-                foreach (var adjCell in adjCells.Where(adjCell => !adjCell.IsBomb))
+                foreach (var adjCell in adjCells.Where(adjCell => !adjCell.IsBomb && !adjCell.IsFlipped))
                 {
                     queue.Enqueue(adjCell);
                 }
@@ -231,9 +224,8 @@ namespace MineSweeper
         /// </summary>
         private void RevealAllCells()
         {
-            foreach (var cell in _gameBoard.Cells.Where(cell => !cell.IsExposed))
+            foreach (var cell in _gameBoard.Cells.Where(cell => !cell.IsFlipped))
             {
-                cell.IsExposed = true;
                 cell.IsFlipped = true;
                 cell.IsFlagged = false;
             }

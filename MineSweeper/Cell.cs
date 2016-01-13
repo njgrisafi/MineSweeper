@@ -11,7 +11,6 @@ namespace MineSweeper
 
         public bool IsBomb { get; set; }
         public bool IsFlipped { get; set; }
-        public bool IsExposed { get; set; }
         public bool IsFlagged { get; set; }
         public int Number { get; set; }
         public int Row;
@@ -23,7 +22,6 @@ namespace MineSweeper
             Col = col;
             IsFlipped = false;
             IsFlagged = false;
-            IsExposed = false;
             IsBomb = false;
             Number = 0;
         }
