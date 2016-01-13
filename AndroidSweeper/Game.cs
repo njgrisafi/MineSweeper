@@ -124,9 +124,9 @@ namespace AndroidSweeper
             //var width = int.Parse((FindViewById<EditText>(Resource.Id.editTextWidth)).Text);
             //var numMines = int.Parse((FindViewById<EditText>(Resource.Id.editTextMines)).Text);
 
-            var height = 11;
-            var width = 6;
-            var numMines = 5;
+            var numMines = int.Parse(Intent.GetStringExtra("mines") ?? "5");
+            var height = int.Parse(Intent.GetStringExtra("height") ?? "11");
+            var width = int.Parse(Intent.GetStringExtra("width") ?? "6");
 
             NumFlags = numMines;
 

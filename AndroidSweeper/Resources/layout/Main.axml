@@ -31,6 +31,7 @@
         android:layout_alignParentRight="true"
         android:gravity="center_horizontal"
         android:textSize="25sp"
+        android:enabled="false"
         android:inputType="number" />
     <TextView
         android:text="Height:"
@@ -43,7 +44,7 @@
         android:gravity="center_horizontal"
         android:textSize="40sp" />
     <EditText
-        android:text="4"
+        android:text="11"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,6 +53,7 @@
         android:layout_alignParentRight="true"
         android:gravity="center_horizontal"
         android:textSize="25sp"
+        android:enabled="false"
         android:inputType="number" />
     <TextView
         android:text="Width:"
@@ -64,7 +66,7 @@
         android:gravity="center_horizontal"
         android:textSize="40sp" />
     <EditText
-        android:text="4"
+        android:text="6"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
         android:layout_alignParentRight="true"
         android:gravity="center_horizontal"
         android:textSize="25sp"
+        android:enabled="false"
         android:inputType="number" />
     <Button
         android:id="@+id/AboutButton"
@@ -91,7 +94,7 @@
         android:layout_marginTop="4.7dp"
         android:text="@string/Play" />
     <RadioGroup
-        android:id="@+id/radioDifficulty"
+        android:id="@+id/DifficultyRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/PlayButton"
@@ -115,5 +118,11 @@
             android:layout_height="wrap_content"
             android:paddingLeft="2.0dp"
             android:text="@string/Hard" />
+        <RadioButton
+            android:id="@+id/CustomRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2.0dp"
+            android:text="@string/Custom" />
     </RadioGroup>
 </RelativeLayout>

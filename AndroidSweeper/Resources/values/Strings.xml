@@ -4,6 +4,7 @@
   <string name="Easy">Easy</string>
   <string name="Medium">Medium</string>
   <string name="Hard">Hard</string>
+  <string name="Custom">Custom</string>
   <string name="ApplicationName">AndroidSweeper</string>
   <string name="Timer">Timer</string>
   <string name="MinesRemaining">Mines Remaining</string>

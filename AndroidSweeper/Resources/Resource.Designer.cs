@@ -105,6 +105,12 @@ namespace AndroidSweeper
 			// aapt resource value: 0x7f05000f
 			public const int AboutButton = 2131034127;
 			
+			// aapt resource value: 0x7f050015
+			public const int CustomRadioButton = 2131034133;
+			
+			// aapt resource value: 0x7f050011
+			public const int DifficultyRadioGroup = 2131034129;
+			
 			// aapt resource value: 0x7f050012
 			public const int EasyRadioButton = 2131034130;
 			
@@ -143,9 +149,6 @@ namespace AndroidSweeper
 			
 			// aapt resource value: 0x7f050005
 			public const int minesRemainingText = 2131034117;
-			
-			// aapt resource value: 0x7f050011
-			public const int radioSex = 2131034129;
 			
 			// aapt resource value: 0x7f05000b
 			public const int textViewHeight = 2131034123;
@@ -200,14 +203,17 @@ namespace AndroidSweeper
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040008
-			public const int About = 2130968584;
+			// aapt resource value: 0x7f040009
+			public const int About = 2130968585;
+			
+			// aapt resource value: 0x7f040005
+			public const int ApplicationName = 2130968581;
 			
 			// aapt resource value: 0x7f040004
-			public const int ApplicationName = 2130968580;
+			public const int Custom = 2130968580;
 			
-			// aapt resource value: 0x7f040009
-			public const int Developer = 2130968585;
+			// aapt resource value: 0x7f04000a
+			public const int Developer = 2130968586;
 			
 			// aapt resource value: 0x7f040001
 			public const int Easy = 2130968577;
@@ -221,14 +227,14 @@ namespace AndroidSweeper
 			// aapt resource value: 0x7f040002
 			public const int Medium = 2130968578;
 			
-			// aapt resource value: 0x7f040006
-			public const int MinesRemaining = 2130968582;
-			
 			// aapt resource value: 0x7f040007
-			public const int Play = 2130968583;
+			public const int MinesRemaining = 2130968583;
 			
-			// aapt resource value: 0x7f040005
-			public const int Timer = 2130968581;
+			// aapt resource value: 0x7f040008
+			public const int Play = 2130968584;
+			
+			// aapt resource value: 0x7f040006
+			public const int Timer = 2130968582;
 			
 			static String()
 			{
