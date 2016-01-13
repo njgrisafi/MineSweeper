@@ -167,15 +167,11 @@ namespace AndroidSweeper
                         block.SetFlag();
                         continue;
                     }
-                    if (cell.IsExposed)
+                    if (cell.IsFlipped)
                     {
-                        if (cell.IsBomb && cell.IsFlipped)
+                        if (cell.IsBomb)
                         {
                             block.SetBomb();
-                        }
-                        else if (cell.IsFlipped)
-                        {
-                            block.SetFlip();
                         }
                         else
                         {

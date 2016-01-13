@@ -55,17 +55,6 @@ namespace AndroidSweeper
             Game.NumFlags++;
         }
         /// <summary>
-        /// Set the block display as flip
-        /// </summary>
-        public void SetFlip()
-        {
-            SetImageResource(Resource.Drawable.tile_0);
-            IsFlipped = true;
-            if (!IsFlagged) return;
-            IsFlagged = false;
-            Game.NumFlags++;
-        }
-        /// <summary>
         /// Set the block display as flag
         /// </summary>
         public void SetFlag()
@@ -93,8 +82,12 @@ namespace AndroidSweeper
                 IsFlagged = false;
                 Game.NumFlags++;
             }
+            IsFlipped = true;
             switch (number)
             {
+                case 0:
+                    SetImageResource(Resource.Drawable.tile_0);
+                    break;
                 case 1:
                     SetImageResource(Resource.Drawable.tile_1);
                     break;
@@ -116,11 +109,9 @@ namespace AndroidSweeper
                 case 7:
                     SetImageResource(Resource.Drawable.tile_7);
                     break;
-                case 8:
+                default:
                     SetImageResource(Resource.Drawable.tile_8);
                     break;
-                default:
-                    SetEmpty();
                     break;
             }
         }
